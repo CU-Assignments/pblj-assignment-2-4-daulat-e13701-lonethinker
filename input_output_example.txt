@@ -1,0 +1,221 @@
+Easy Level: Create a Java program to connect to a MySQL database and fetch data from a single table. The program should:
+  - Use `DriverManager` and `Connection` objects.
+  - Retrieve and display all records from a table named `Employee` with columns     `EmpID`, `Name`, and `Salary`.
+INPUT----
++-------+---------------+----------+
+| EmpID | Name          | Salary   |
++-------+---------------+----------+
+|     1 | John Doe      | 50000.00 |
+|     2 | Jane Smith    | 60000.00 |
+|     3 | Alice Johnson | 55000.00 |
++-------+---------------+----------+
+OUTPUT---
+Connected to the database successfully.
+Employee Records:
+EmpID: 1, Name: John Doe, Salary: 50000.00
+EmpID: 2, Name: Jane Smith, Salary: 60000.00
+EmpID: 3, Name: Alice Johnson, Salary: 55000.00
+
+
+
+
+
+
+Medium Level: Build a program to perform CRUD operations (Create, Read, Update, Delete) on a database table `Product` with columns:
+  - `ProductID`, `ProductName`, `Price`, and `Quantity`.
+The program should include:
+  - Menu-driven options for each operation.
+  - Transaction handling to ensure data integrity.
+TABLE----
++-------------+---------------+------+-----+---------+----------------+
+| Field       | Type          | Null | Key | Default | Extra          |
++-------------+---------------+------+-----+---------+----------------+
+| ProductID   | int           | NO   | PRI | NULL    | auto_increment |
+| ProductName | varchar(100)  | NO   |     | NULL    |                |
+| Price       | decimal(10,2) | NO   |     | NULL    |                |
+| Quantity    | int           | NO   |     | NULL    |                |
++-------------+---------------+------+-----+---------+----------------+
+
+INPUT/OUTPUT----
+Connected to the database successfully.
+
+Product Management Menu:
+1. Create Product
+2. Read Products
+3. Update Product
+4. Delete Product
+5. Exit
+Choose an option: 1
+Enter Product Name: Laptop
+Enter Price: 75000.00
+Enter Quantity: 7
+Product inserted successfully.
+
+Product Management Menu:
+1. Create Product
+2. Read Products
+3. Update Product
+4. Delete Product
+5. Exit
+Choose an option: 2
+
+Product List:
+----------------------------------------
+ProductID  ProductName                    Price      Quantity  
+----------------------------------------
+1          Laptop                         75000.00   7         
+
+Product Management Menu:
+1. Create Product
+2. Read Products
+3. Update Product
+4. Delete Product
+5. Exit
+Choose an option: 3
+Enter Product ID to update: 1
+Enter New Product Name: Laptops
+Enter New Price: 74999.99           
+Enter New Quantity: 10
+Product updated successfully.
+
+Product Management Menu:
+1. Create Product
+2. Read Products
+3. Update Product
+4. Delete Product
+5. Exit
+Choose an option: 2
+
+Product List:
+----------------------------------------
+ProductID  ProductName                    Price      Quantity  
+----------------------------------------
+1          Laptops                        74999.99   10        
+
+Product Management Menu:
+1. Create Product
+2. Read Products
+3. Update Product
+4. Delete Product
+5. Exit
+Choose an option: 4
+Enter Product ID to delete: 1
+Product deleted successfully.
+
+Product Management Menu:
+1. Create Product
+2. Read Products
+3. Update Product
+4. Delete Product
+5. Exit
+Choose an option: 2
+
+Product List:
+----------------------------------------
+ProductID  ProductName                    Price      Quantity  
+----------------------------------------
+
+Product Management Menu:
+1. Create Product
+2. Read Products
+3. Update Product
+4. Delete Product
+5. Exit
+Choose an option: 5
+
+
+
+
+
+Hard Level: Develop a Java application using JDBC and MVC architecture to manage student data. The application should:
+  - Use a `Student` class as the model with fields like `StudentID`, `Name`, `Department`, and `Marks`.
+  - Include a database table to store student data.
+  - Allow the user to perform CRUD operations through a simple menu-driven view.
+  - Implement database operations in a separate controller class.
+
+INPUT/OUTPUT-----
+Connected to the database successfully.
+
+Student Management Menu:
+1. Create Student
+2. Read Students
+3. Update Student
+4. Delete Student
+5. Exit
+Choose an option: 1
+Enter Name: John Doe
+Enter Department: Computer Science
+Enter Marks: 85.50
+Student inserted successfully.
+
+Student Management Menu:
+1. Create Student
+2. Read Students
+3. Update Student
+4. Delete Student
+5. Exit
+Choose an option: 2
+
+Student List:
+----------------------------------------
+StudentID  Name                           Department                     Marks    
+----------------------------------------
+1          John Doe                       Computer Science               85.50    
+
+Student Management Menu:
+1. Create Student
+2. Read Students
+3. Update Student
+4. Delete Student
+5. Exit
+Choose an option: 3
+Enter Student ID: 1
+Enter Name: John Doe Updated
+Enter Department: Computer Science
+Enter Marks: 90.00
+Student updated successfully.
+
+Student Management Menu:
+1. Create Student
+2. Read Students
+3. Update Student
+4. Delete Student
+5. Exit
+Choose an option: 2
+
+Student List:
+----------------------------------------
+StudentID  Name                           Department                     Marks    
+----------------------------------------
+1          John Doe Updated               Computer Science               90.00    
+
+Student Management Menu:
+1. Create Student
+2. Read Students
+3. Update Student
+4. Delete Student
+5. Exit
+Choose an option: 4
+Enter Student ID: 1
+Student deleted successfully.
+
+Student Management Menu:
+1. Create Student
+2. Read Students
+3. Update Student
+4. Delete Student
+5. Exit
+Choose an option: 2
+
+Student List:
+----------------------------------------
+StudentID  Name                           Department                     Marks    
+----------------------------------------
+
+Student Management Menu:
+1. Create Student
+2. Read Students
+3. Update Student
+4. Delete Student
+5. Exit
+Choose an option: 5
